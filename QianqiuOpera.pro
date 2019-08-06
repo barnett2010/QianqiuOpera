@@ -13,11 +13,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    base/cardmanage.cpp \
+    base/cardmanage.cpp \
+    base/playmanage.cpp \
         main.cpp \
     common/qobjectlistmodel.cpp \
     base/qftp/qftp.cpp \
     base/qftp/qurlinfo.cpp \
-    base/config.cpp
+    base/config.cpp \
+    items/card.cpp
 
 RESOURCES += qml.qrc
 
@@ -49,7 +53,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    base/cardmanage.h \
+    base/cardmanage.h \
+    base/playmanage.h \
     common/qobjectlistmodel.h \
     base/qftp/qftp.h \
     base/qftp/qurlinfo.h \
-    base/config.h
+    base/config.h \
+    items/card.h

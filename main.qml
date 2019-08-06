@@ -1,4 +1,5 @@
 import QtQuick 2.9
+import "./verticalPage"
 
 Item {
     width: 960
@@ -23,6 +24,11 @@ Item {
         height: 540
         anchors.centerIn: parent
         scale: Math.min(widthRatio,heightRatio)
+
+        Page_play {
+            anchors.fill: parent
+            visible: true
+        }
 
     }
 }

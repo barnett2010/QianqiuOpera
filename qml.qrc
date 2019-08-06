@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>verticalPage/Page_play.qml</file>
     </qresource>
 </RCC>
